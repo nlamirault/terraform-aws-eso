@@ -13,8 +13,6 @@
 # limitations under the License.
 
 locals {
-  service_name = format("%s-eso", var.cluster_name)
-
   role_name = "eso"
 
   tags = merge(

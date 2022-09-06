@@ -20,18 +20,17 @@ variable "cluster_name" {
   description = "Name of the EKS cluster"
 }
 
-variable "eso_role_name" {
-  description = "The name of the IAM role"
-  type        = string
-  default     = "eso-controller"
-}
-
 variable "tags" {
   description = "A map of tags to add to all resources"
   type        = map(string)
 }
 
-variable "eso_namespace" {
+variable "namespace" {
   description = "The K8s namespace for ESO resources"
   type        = string
+}
+
+variable "service_account" {
+  type        = string
+  description = "The Kubernetes service account"
 }
