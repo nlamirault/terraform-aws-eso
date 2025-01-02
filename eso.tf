@@ -14,7 +14,7 @@
 
 module "irsa_eso" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-assumable-role-with-oidc"
-  version = "5.48.0"
+  version = "5.52.1"
 
   create_role                   = true
   role_description              = "External Secrets Operator"
